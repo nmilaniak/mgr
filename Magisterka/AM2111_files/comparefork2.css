@@ -1,0 +1,288 @@
+/**
+ * @version		$Id: comparefork2.css 1.0.0 2012-08-26 styleware $
+ * @package		Compare for K2
+ * @author		Styleware http://www.styleware.eu
+ * @copyright	Copyright (c) 2010-2012 Styleware,  All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+*/
+
+.compareView {
+	margin-bottom: 20px;
+}
+.compareView table tbody tr td {
+	padding: 5px;
+	vertical-align: top;
+}
+.compareView table tbody tr.odd td {
+	
+}
+.compareView table tbody tr.extrafieldsRow td {
+	border: solid 1px #dbdbdb;
+	/*-webkit-box-shadow: 0px 0px 1px #666,0px 0px 3px #FFF, 0px 0px 12px rgba(55, 55, 55, 0.2);
+	-moz-box-shadow: 0px 0px 1px #666,0px 0px 3px #FFF, 0px 0px 12px rgba(55, 55, 55, 0.2);
+	box-shadow: 0px 0px 1px #666,0px 0px 3px #FFF, 0px 0px 12px rgba(55, 55, 55, 0.2);*/
+}
+.compareView table tbody tr td {
+	text-align: center;
+}
+.compareView table tbody tr td.fieldLabel {
+	text-align: left;
+}
+.compareView table tbody tr.extrafieldsRow.even td {
+	background: /*#ebebeb*/#FFF;
+}
+.compareView table tbody tr.extrafieldsRow.odd td {
+	background: /*#f5f5f5*/#FFF;
+}
+.compareView table tbody tr td.fieldLabel,
+.compareView table tbody tr.highlight td.fieldLabel {
+	width: 18%;
+	font-weight: bold!important;
+}
+.compareView table tbody tr td.highlight,
+.compareView table tbody tr.highlight td.highlight,
+.compareView table tbody tr.extrafieldsRow.highlight td,
+.compareView table tbody tr.highlight {
+	background: #ffd!important;
+	font-weight: normal;
+}
+.compareView table tbody tr#comparefork2_item_images td.fieldLabel.highlight,
+.compareView table tbody tr#comparefork2_item_title td.fieldLabel.highlight,
+.compareView table tbody tr#comparefork2_item_images.highlight td.fieldLabel,
+.compareView table tbody tr#comparefork2_item_title.highlight td.fieldLabel {
+	background: #fff!important;
+}
+.compareView table tbody tr td div.itemExtraFields ul li{
+	
+}
+.compareView tr#comparefork2_item_title h3 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 4px 0 10px 0;
+}
+.compareView tr#comparefork2_item_title h3 a {
+	color: #000;
+}
+.compareView tr#comparefork2_item_title h3 a:hover {
+	text-decoration: underline;
+}
+.compareView table tbody tr td.bestItem,
+.compareView table tbody tr.extrafieldsRow td.bestItem {
+	border-left: solid 2px #339900;
+	border-right: solid 2px #339900;
+}
+.compareView table tbody tr:first-child td.bestItem {
+	border-top: solid 2px #339900;
+}
+.compareView table tbody tr td.bestItem .itemImageBest {
+	position: relative;
+}
+.compareView table tbody tr:last-child td.bestItem {
+	border-bottom: solid 2px #339900;
+}
+.compareView table tbody tr.comparefork2_item_images td.bestItem {
+}
+.compareView table tbody tr:first-child td.bestItem .bestBadge {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 86px;
+	height: 72px;
+	background: url(../images/best.png) no-repeat 0 0;
+	display: block;
+}
+.compareView table.items_compared_2 tbody tr td.col0,
+.compareView table.items_compared_2 tbody tr td.col1 {
+	width: 41%;
+}
+.compareView table.items_compared_3 tbody tr td.col0,
+.compareView table.items_compared_3 tbody tr td.col1,
+.compareView table.items_compared_3 tbody tr td.col2 {
+	width: 27%;
+}
+.compareView table.items_compared_4 tbody tr td.col0,
+.compareView table.items_compared_4 tbody tr td.col1,
+.compareView table.items_compared_4 tbody tr td.col2,
+.compareView table.items_compared_4 tbody tr td.col3 {
+	width: 20%;
+}
+.compareView div.itemRatingBlock {
+	float: none;
+	position: inherit;
+	width: 100px;
+	margin: 0 auto;
+}
+.better span {
+	font-weight: bold;
+	color: #008000;
+	display: block;
+}
+
+/*Alert message styles*/
+#comparefork2_message{
+	right: 10px;
+    top: 10px;
+	position:fixed;
+	font: 12px Arial,sans-serif;
+    max-height: 100%;
+    overflow: hidden;
+    padding: 10px;
+	z-index:1001;
+}
+#comparefork2_message .comparefork2_block{
+	background-color: #C01313;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    height: 60px;
+    opacity: 0.9;
+    width: 235px;
+	border-radius: 7px 7px 7px 7px;
+	margin: 8px 8px 0 0;
+    position: relative;
+}
+#comparefork2_message .comparefork2_block{
+	color: #FFFFFF;
+	padding:10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/*Field yes and no values*/
+.field_yes_value span.itemExtraFieldsValue{
+	background: url(../images/k2c_yes.png) no-repeat 0 0;
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    text-indent: -999999px;
+    width: 24px;
+}
+.field_no_value span.itemExtraFieldsValue{
+	background: url(../images/k2c_no.png) no-repeat 0 0;
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    text-indent: -999999px;
+    width: 24px;
+}
+/*TIPSY*/
+.tipsy {
+	padding: 5px;
+	font-size: 13px;
+	position: absolute;
+	z-index: 100000;
+}
+	.tipsy-inner {
+		padding: 10px 16px 8px 16px;
+		background-color: #000;
+		color: #fff;
+		max-width: 250px;
+		text-align: center;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border-radius: 3px;
+	}
+	.tipsy-arrow {
+		position: absolute;
+		background: url('../images/tipsy.gif') no-repeat top left;
+		width: 9px;
+		height: 5px;
+	}
+		.tipsy-n .tipsy-arrow {
+			top: 0;
+			left: 50%;
+			margin-left: -4px;
+		}
+		.tipsy-nw .tipsy-arrow {
+			top: 0;
+			left: 10px;
+		}
+		.tipsy-ne .tipsy-arrow {
+			top: 0;
+			right: 10px;
+		}
+		.tipsy-s .tipsy-arrow {
+			bottom: 0;
+			left: 50%;
+			margin-left: -4px;
+			background-position: bottom left;
+		}
+		.tipsy-sw .tipsy-arrow {
+			bottom: 0;
+			left: 10px;
+			background-position: bottom left;
+		}
+		.tipsy-se .tipsy-arrow {
+			bottom: 0;
+			right: 10px;
+			background-position: bottom left;
+		}
+		.tipsy-e .tipsy-arrow {
+			top: 50%;
+			margin-top: -4px;
+			right: 0;
+			width: 5px;
+			height: 9px;
+			background-position: top right;
+		}
+		.tipsy-w .tipsy-arrow {
+			top: 50%;
+			margin-top: -4px;
+			left: 0;
+			width: 5px;
+			height: 9px;
+		}
+		
+/*COMPARE FOR K2 - MODULE*/
+.comparefork2ModuleItems {
+	overflow: hidden;
+}
+.comparefork2ModuleItem {
+	border-bottom: solid 1px #ccc;
+	padding: 0 0 12px 0;
+	margin: 0 0 10px 0;
+	width: 100%;
+	float: left;
+	clear: both;
+}
+.comparefork2ModuleItem h4 {
+	font-weight: normal;
+	font-size: 16px;
+	margin: 0 0 10px 0!important;
+	padding: 0 16px 0 0!important;
+	position: relative;
+}
+.comparefork2ModuleItem .comparefork2ItemImage img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.comparefork2ModuleItem .comparefork2ItemIntro {
+	color: #000;
+}
+.comparefork2ModuleActions {
+	overflow: hidden;
+}
+.comparefork2ModuleActions,
+.comparefork2ModuleActions a {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.removeFromCompare {
+	position: absolute;
+	top: 4px;
+	right: 0;
+}
+
+/*Plugin*/
+.addToCompareContainer {
+	padding: 10px 0 0 0;
+	margin-top: 5px;
+/*	padding: 0px;*/
+/*	text-align:right;*/
+}
+.addToCompareContainer a {
+	background: url(http://cdn1.iconfinder.com/data/icons/diagona/icon/16/103.png) no-repeat;
+	padding-left: 20px;
+	font-size: 12px;
+	line-height: 16px;
+}
